@@ -1,0 +1,5 @@
+// Write the minimal OR most efficient Huff smart contract that reverses all calldata that it receives
+
+#define macro MAIN() = takes(0) returns (0) {
+
+}

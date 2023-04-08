@@ -1,0 +1,7 @@
+// We got another fun one for ya. Implement the most gas efficient contract that returns true if the calldata represents a signed message from the sender of the tx.
+
+// If it isn't, do something that makes the transaction run out of gas.
+
+#define macro MAIN() = takes(0) returns (0) {
+
+}
