@@ -1,5 +1,24 @@
-// Write the minimal OR most efficient Huff smart contract that reverses all calldata that it receives
+// Write the minimal OR most efficient Huff smart contract 
+// that reverses all calldata that it receives
 
-#define macro MAIN() = takes(0) returns (0) {
-
+#define macro MAIN() = takes(0) returns(0) {
+  calldatasize
+  dup1
+  loop:
+      0x01
+      dup2
+      sub
+      calldataload
+      dup2
+      dup4
+      sub
+      mstore
+      
+      0x01
+      swap1
+      sub
+      
+      returndatasize dup2 gt
+      loop jumpi
+  calldatasize returndatasize return
 }
